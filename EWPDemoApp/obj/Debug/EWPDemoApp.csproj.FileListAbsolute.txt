@@ -1,0 +1,6 @@
+C:\projects\EWPDemoApp\EWPDemoApp\obj\Debug\EWPDemoApp.csprojResolveAssemblyReference.cache
+C:\projects\EWPDemoApp\EWPDemoApp\bin\Debug\EWPDemoApp.exe.config
+C:\projects\EWPDemoApp\EWPDemoApp\bin\Debug\EWPDemoApp.exe
+C:\projects\EWPDemoApp\EWPDemoApp\bin\Debug\EWPDemoApp.pdb
+C:\projects\EWPDemoApp\EWPDemoApp\obj\Debug\EWPDemoApp.exe
+C:\projects\EWPDemoApp\EWPDemoApp\obj\Debug\EWPDemoApp.pdb

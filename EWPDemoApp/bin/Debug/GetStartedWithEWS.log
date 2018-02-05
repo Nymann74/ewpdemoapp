@@ -1,0 +1,50 @@
+EWS sample application started.
+Get folder operation request:
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<soap:Header>
+    <t:RequestServerVersion Version="Exchange2007_SP1" />
+  </soap:Header>
+  <soap:Body>
+    <GetFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <FolderShape>
+        <t:BaseShape>Default</t:BaseShape>
+      </FolderShape>
+      <FolderIds>
+        <t:DistinguishedFolderId Id="inbox"/>
+      </FolderIds>
+    </GetFolder>
+  </soap:Body>
+</soap:Envelope>
+
+Response:
+<?xml version="1.0" encoding="utf-16"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="20" MajorBuildNumber="464" MinorBuildNumber="15" Version="V2018_01_08" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </s:Header>
+  <s:Body>
+    <m:GetFolderResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ResponseMessages>
+        <m:GetFolderResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:Folders>
+            <t:Folder>
+              <t:FolderId Id="AAMkAGMxZjlkNzJlLWUyMjUtNDM2MS05MTQ0LWVkYjlhMjNlNGNkYwAuAAAAAACZqtWIhMOxRLa+cObNT1/LAQALYGL0bDYAQpQHN6i4YpC+AAAAAAEMAAA=" ChangeKey="AQAAABYAAAALYGL0bDYAQpQHN6i4YpC+AAAAAElU" />
+              <t:DisplayName>Indbakke</t:DisplayName>
+              <t:TotalCount>1</t:TotalCount>
+              <t:ChildFolderCount>0</t:ChildFolderCount>
+              <t:UnreadCount>1</t:UnreadCount>
+            </t:Folder>
+          </m:Folders>
+        </m:GetFolderResponseMessage>
+      </m:ResponseMessages>
+    </m:GetFolderResponse>
+  </s:Body>
+</s:Envelope>
+Folder name:     Indbakke
+Total messages:  1
+Unread messages: 1
+EWS sample application ends.
